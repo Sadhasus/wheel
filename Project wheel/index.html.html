@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+      #a
+       {
+        transition: rotate 10s;
+       }
+    </style>
+</head>
+<body>
+    <img id="a" src="./spinningwheel.jpg">
+    <input id="b" type="button" value="spin" onmousedown="spin()" onmouseup="back()">
+    <script>
+        function spin()
+        {
+            
+            document.getElementById("a").style.rotate="6360deg";
+        }
+        function back()
+        {
+            
+            document.getElementById("a").style.rotate="0deg";
+        }
+    </script>
+</body>
+</html>
